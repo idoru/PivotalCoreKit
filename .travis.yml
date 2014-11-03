@@ -1,10 +1,13 @@
 language: objective-c
+osx_image: xcode61
 
 before_install:
   - git submodule update --init
 
 env:
   matrix:
+    - BUILD_SDK_VERSION="8.1" SIMULATOR_VERSION="8.1"
+    - BUILD_SDK_VERSION="8.1" SIMULATOR_VERSION="7.1"
     - BUILD_SDK_VERSION="8.0" SIMULATOR_VERSION="7.1"
     - BUILD_SDK_VERSION="7.1" SIMULATOR_VERSION="7.1"
 
