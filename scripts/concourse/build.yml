@@ -1,0 +1,6 @@
+platform: darwin
+inputs:
+  - name: cedar
+  - name: pck
+run:
+  path: pck/scripts/concourse/build.sh
